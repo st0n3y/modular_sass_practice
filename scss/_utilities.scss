@@ -8,10 +8,24 @@
 	@import url($font-url--google);
 }
 
-// Functions and Directives
+// Calculate em values
 
 @function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
 }
 
+// Call the colour palette modifiers
+
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($palettes, $palette), $shade);
+}
+
 // Mixins
+
+@mixin bg-colours($map) {
+	@each $theme, $colour in $map {
+		&--#{$theme} {
+			background-color: $colour;
+		}
+	}
+}
