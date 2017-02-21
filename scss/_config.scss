@@ -6,7 +6,7 @@
 
 $font-url--google : 'http://fonts.googleapis.com/css?family=Lato:10D,300,400,700,900';
 
-$font-url--primary : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--secondary : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
@@ -61,7 +61,7 @@ $ui-colours: (
 	default : $fountain-blue,
 	success : $emerald,
 	error : $sunglo,
-	warning : $coral.
+	warning : $coral,
 	info : $purple-majesty
 );
 
@@ -69,6 +69,16 @@ $ui-colours: (
 
 $base__font-size : 16px;
 $base__line : 24px;
+$letter-space : 1px;
+
+// Border Radius
+
+$br--default : .4em;
+$br--round : 50%;
+
+// Transitions
+
+$trns-duration : .3s;
 
 // Path to Assets
 
