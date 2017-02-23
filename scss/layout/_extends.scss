@@ -6,10 +6,15 @@
 
 %panel-default {
 	padding-top: em(30px);
-	padding_bottom: em(20px);
+	@include mq(medium) {
+		padding_bottom: em(20px);
+	}
 }
 
 %panel-padding {
-	padding-top: em(80px);
-	padding_bottom: em(34px);
+	padding-top: em(34px);
+	@include mq(medium) {
+		padding-top: em(80px);
+		padding_bottom: em(34px);
+	}
 }
